@@ -667,13 +667,13 @@ function updateCongratsGUI(pPointerX as integer, pPointerY as integer)
     if floor(tIndex) <> floor(congratsBGIndex)
         deleteimage(40)
         loadimage(40, "gui/congrats/000.jpg")
-        remif congratsBGIndex >= 0 and congratsBGIndex < 10
-        remloadimage(40, "gui/congrats/00" + str(floor(congratsBGIndex)) + ".jpg")
-        remelseif congratsBGIndex >= 10 and congratsBGIndex < 100
+        rem if congratsBGIndex >= 0 and congratsBGIndex < 10
+        rem loadimage(40, "gui/congrats/00" + str(floor(congratsBGIndex)) + ".jpg")
+        rem elseif congratsBGIndex >= 10 and congratsBGIndex < 100
         rem    loadimage(40, "gui/congrats/0" + str(floor(congratsBGIndex)) + ".jpg")
-        remelse
+        rem else
         rem    loadimage(40, "gui/congrats/" + str(floor(congratsBGIndex)) + ".jpg")
-        remendif
+        rem endif
     endif
     SetSpriteImage(206, 40)
 
